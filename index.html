@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOTSTRAP</title>
+    <style>
+        .tombol {
+            border-radius: 5px;
+            border-color: blueviolet;
+            color: blueviolet;
+            width: 100px;
+            height: 35px;
+            line-height: 30px;
+        }
+
+        .tombol:hover {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- TYPOGRAPHY -->
+    <h1>Hello with bootstrap 4</h1>
+    <h2>Hello with bootstrap 4</h2>
+    <h3>Hello with bootstrap 4</h3>
+    <h4>Hello with bootstrap 4</h4>
+    <h5>Hello with bootstrap 4</h5>
+    <h6 class="h1">Hello with bootstrap 4</h6>
+
+   <br><hr>
+
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+
+    <br><hr>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione excepturi aperiam sequi iste quidem molestiae voluptatem sint quisquam nulla.
+    </p>
+    <p class="lead">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quae numquam tenetur in fugiat praesentium illo nobis cum debitis ipsum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore obcaecati harum voluptatem itaque voluptate et magni est assumenda dolorem.
+    </p>
+
+    <hr>
+
+    <p class="text-monospace">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi tempore accusantium? Incidunt animi obcaecati delectus, a minima dolorum totam? Illo dolorum deleniti itaque.
+    </p>
+
+    <hr>
+
+    <p class="font-weight-bold">
+        Teks bold
+    </p>
+    <p>
+        Teks normal
+    </p>
+    <p class="font-italic">
+        Teks italic
+    </p>
+
+    <hr>
+
+    <p class="text-uppercase font">make to uppercase</p>
+    <p class="text-lowercase">make to lowercase</p>
+    <p class="text-capitalize">make to capitalize</p>
+
+    <hr>
+
+    <blockquote
+        class="blockquote text-right"
+    >
+        <p>Treat others the way you want to be treated.</p>
+        <footer class="blockquote-footer">
+            Unknown at <cite>Unknown</cite>
+        </footer>
+    </blockquote>
+
+    <hr>
+
+    <ul class="list-unstyled">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        <li>List 5</li>
+    </ul>
+
+    <hr>
+
+    <!-- ALIGNMENT & DISPLAY -->
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique fugit architecto facere officiis porro? Ipsam iusto veniam cumque! Maiores, unde cum! Obcaecati, quos distinctio!</p>
+    <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, natus laborum mollitia minima voluptas expedita vero? Consectetur iure quaerat, facilis libero voluptates voluptate ipsa?</p>
+    <p class="text-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eveniet explicabo sit. Vero omnis excepturi exercitationem perspiciatis blanditiis dolor, qui alias sequi sed libero!</p>
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum ut sed sit neque odit, ab sapiente magnam incidunt officia dolorem laborum provident blanditiis.</p>
+
+    <hr>
+
+    <!-- MEDIA QUERY -->
+    <!-- Tentang style apa yg akan diterapkan pada lebar layar tertentu -->
+    <!-- 
+        small       : sm
+        medium      : md
+        large       : lg
+        xtra-large  : xl
+     -->
+
+    <p class="text-sm-right">Rata kanan pada small atau lebih</p>
+    <p class="text-md-right">Rata kanan pada medium atau lebih</p>
+    <p class="text-lg-right">Rata kanan pada large atau lebih</p>
+    <p class="text-xl-right">Rata kanan pada extra-large atau lebih</p>
+
+    <hr>
+
+    <p class="text-sm-center">Rata tengah pada small atau lebih</p>
+    <p class="text-md-center">Rata tengah pada medium atau lebih</p>
+    <p class="text-lg-center">Rata tengah pada large atau lebih</p>
+    <p class="text-xl-center">Rata tengah pada extra-large atau lebih</p>
+
+    <!-- Block level element & inline level element -->
+    <!-- Width & Height hanya berlaku untuk block level element -->
+
+    <hr>
+
+    <h1 class="d-inline bg-danger">Tag Header</h1>
+    <h1 class="d-inline bg-warning">Tag Header 2</h1>
+
+    <span class="d-block bg-primary">Ini tag inline</span>
+    <span class="d-block bg-success">Ini tag inline 2</span>
+
+     <hr>
+
+     <!-- MEWARNAI -->
+     <!-- TEXT -->
+    <h4 class="text-primary">Primary</h4>
+    <h4 class="text-info">Info</h4>
+    <h4 class="text-success">Success</h4>
+    <h4 class="text-secondary">Secondary</h4>
+    <h4 class="text-danger">Danger</h4>
+    <h4 class="text-warning">Warning</h4>
+    <h4 class="text-dark">Dark</h4>
+
+    <hr>
+
+    <!-- LINK -->
+    <p>
+        <a href="" class="text-primary">Link Primary</a>
+    </p>
+    <p>
+        <a href="" class="text-info">Link Info</a>
+    </p>
+    <p>
+        <a href="" class="text-danger">Link Danger</a>
+    </p>
+
+    <hr>
+
+    <!-- BACKGROUND -->
+    <div style="background-color: darkgray">
+        <p class="text-white bg-primary">Background Primary</p>
+        <p class="text-white bg-info">Background Info</p>
+        <p class="text-white bg-transparent">Background Transparent</p>
+        <p class="text-white bg-white">Background White</p>
+        <p class="invisible">Tidak Terlihat</p>
+    </div>
+
+    <hr>
+
+    <!-- SPACING / BOX MODEL -->
+    <!-- Margin adalah jarak dari element ke luar -->
+    <!-- 
+        PROPERTY
+        margin  : m
+        padding : p
+
+        SIDE CODE
+        top     : t
+        right   : r
+        left    : l
+        bottom  : b
+
+        right and left : x
+        top and bottom : y
+    -->
+    <h1 class="bg-info">Something</h1>
+    <h1 class="bg-info mt-0">Margin Top 0</h1>
+    <h1 class="bg-info mt-1">Margin Top 1</h1>
+    <h1 class="bg-info mt-2">Margin Top 2</h1>
+    <h1 class="bg-info mt-3">Margin Top 3</h1>
+    <h1 class="bg-info mt-4">Margin Top 4</h1>
+    <h1 class="bg-info mt-5">Margin Top 5</h1>
+
+    <p>
+        <span class="text-white bg-info mr-5">Margin right 5</span>
+        <span class="mx-5">text in the middle</span>
+        <span class="text-white bg-primary ml-5">Margin left 5</span>
+    </p>
+
+    <hr>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="margin-top: 600px"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
