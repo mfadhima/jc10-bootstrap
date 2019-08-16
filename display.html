@@ -7,6 +7,35 @@
     <title>DISPLAY</title>
 </head>
 <body>
-    
+    <!-- 
+        Display: 
+        1. Block
+            - Mempunyai property width and height
+            - Lebar default memenuhi lebar browser
+            - Terusun ke bawah
+        2. Inline
+            - Tidak memiliki property width and height
+            - Lebar default sesuai isi konten
+            - Tersusun kesamping (jika masih memungkinkan)
+        3. Inline-Block
+            - Mempunyai property width and height
+            - Lebar default sesuai isi konten
+     -->
+
+
+     <!-- Block -> inline-block -->
+     <h3
+        style='background-color: blue; width:300px;
+              color: white; 
+              display: inline-block;'>H3 Adalah Block</h3>
+     <h3 
+        style='background-color: violet; width:300px;
+              color: white; 
+              display:inline-block;'>H3 Adalah Block</h3>
+
+     <!-- Inline -> inline-block -->
+     <span
+        style='background-color: brown; color: white; padding-right: 20px'
+     >Bisa pakai padding ?</span>
 </body>
 </html>
