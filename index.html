@@ -21,6 +21,7 @@
         }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- TYPOGRAPHY -->
@@ -200,14 +201,123 @@
     <h1 class="bg-info mt-5">Margin Top 5</h1>
 
     <p>
-        <span class="text-white bg-info">Margin right 5</span>
-        <span class="mx-5">text in the middle</span>
+        <span class="text-white bg-info mr-5">Margin right 5</span>
+        <span class="">text in the middle</span>
         <span class="text-white bg-primary ml-5">Margin left 5</span>
     </p>
 
+    <p>
+        <span class="text-white bg-info">Span 1</span>
+        <span class="mx-5">Menggunakan margin horizontal (x)</span>
+        <span class="text-white bg-primary">Span 2</span>
+    </p>
+
+    <!-- MARGIN ALL SIDES -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="bg-success m-5">Margin 4 sisi dengan m-5</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
     <hr>
 
-    
+    <!-- PADDING HORIZONTAL -->
+    <p class="px-5 bg-danger text-white">px-5 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <!-- PADDING VERTICAL -->
+    <p class="py-5 bg-warning">py-5 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <!-- PADDING ALL SIDES -->
+    <p class="p-5 bg-primary">p-5 Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+    <hr>
+
+    <!-- SIZING -->
+
+    <!-- WIDTH -->
+    <div class="w-25 bg-dark text-white p-3">Width 25%</div>
+    <div class="w-50 bg-info text-white p-3">Width 50%</div>
+    <div class="w-75 bg-primary text-white p-3">Width 75%</div>
+    <div class="w-100 bg-success text-white p-3">Width 100%</div>
+    <div class="w-auto bg-secondary text-white p-3">Width auto</div>
+    <hr>
+
+    <!-- HEIGHT -->
+    <div style="height: 500px; border: solid teal">
+        <div class="d-inline-block h-25 bg-dark text-white p-3">Height 25%</div>
+        <div class="d-inline-block h-50 bg-info text-white p-3">Height 50%</div>
+        <div class="d-inline-block h-75 bg-primary text-white p-3">Height 75%</div>
+        <div class="d-inline-block h-100 bg-success text-white p-3">Height 100%</div>
+        <div class="d-inline-block h-auto bg-secondary text-white p-3">Height Auto</div>
+    </div>
+
+    <hr>
+
+    <!-- BORDER -->
+    <!-- Tebal border akan diatur ulang menggunakan css, class: border-5 -->
+    <div class="text-white bg-info p-3 mb-2 border-5 border border-danger">Border Regular</div>
+    <div class="text-white bg-info p-3 mb-2 border-7 border-top border-danger">Border Top</div>
+    <div class="text-white bg-info p-3 mb-2 border-9 border-right border-danger">Border Right</div>
+    <div class="text-white bg-info p-3 mb-2 border-7 border-bottom border-danger">Border Bottom</div>
+    <div class="text-white bg-info p-3 mb-2 border-5 border-left border-danger">Border Left</div>
+
+    <hr>
+
+    <!-- BUTTON -->
+    <button class="btn btn-lg btn-primary">Button Large</button>
+    <button class="btn btn-sm btn-success">Button Small</button>
+    <button class="btn btn-block btn-light">Button Block</button>
+    <hr>
+    <button class="btn btn-outline-primary">Primary</button>
+    <button class="btn btn-outline-success">Success</button>
+    <button class="btn btn-outline-danger">Danger</button>
+    <hr>
+
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+        <!-- tombol -->
+        <button class="dropdown-toggle btn btn-primary"
+        data-toggle="dropdown">Menu Dropdown</button>
+
+        <!-- list yg akan muncul setelah tombol ditekan -->
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">List Dropdown 1</a>
+            <a class="dropdown-item" href="#">List Dropdown 2</a>
+            <a class="dropdown-item" href="#">List Dropdown 3</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Navigation</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#tekanaku">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="tekanaku">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Category</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Men</a>
+                        <a class="dropdown-item" href="#">Women</a>
+                        <a class="dropdown-item" href="#">Kids</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mx-3" type="text">
+                <button class="btn btn-outline-secondary">Search</button>
+            </form>
+        </div>
+        
+    </nav>
+
 
 
 
