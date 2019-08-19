@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GRIDFLEX</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -14,7 +15,7 @@
     <!-- Tentang menentukan posisi element -->
     <!-- Dalam grid bootstrap, lebar browser dibagi menjadi 12 bagian -->
     
-    <div class="container">
+    <div class="container" style="font-family: stellar">
         <!-- CONTOH 1 -->
         <div class="row">
             <div class="border border-primary col-sm-6 col-md-8 col-lg-9 col-xl-10">
@@ -57,8 +58,60 @@
         <div class="row">
             <div class="col-sm-8 offset-2 border border-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sapiente fuga!</div>
         </div>
+
+        <!-- FLEXBOX -->
+        <!-- Tujuannya sama dengan GRID, mengatur letak element di html -->
+        <h3 style="text-align: center; margin-top: 40px">FLEX - ROW</h3>
+
+        <h5 class="mt-5">justify-content-center</h5>
+        <div class="d-flex flex-row justify-content-center container-flex text-white">
+            <div class="p-4 item-h1">Flex Item 1</div>
+            <div class="p-4 mx-3 item-h1">Flex Item 2</div>
+            <div class="p-4 item-h1">Flex Item 3</div>
+        </div>
+
+        <h5 class="mt-5">justify-content-around</h5>
+        <div class="d-flex flex-row justify-content-around container-flex text-white">
+            <div class="p-4 item-h1">Flex Item 1</div>
+            <div class="p-4 item-h1">Flex Item 2</div>
+            <div class="p-4 item-h1">Flex Item 3</div>
+        </div>
+
+        <h5 class="mt-5">justify-content-between</h5>
+        <!-- between akan memberikan margin 'antar' element child -->
+        <div class="d-flex flex-row justify-content-between container-flex text-white">
+            <div class="p-4 item-h1">Flex Item 1</div>
+            <div class="p-4 item-h1">Flex Item 2</div>
+            <div class="p-4 item-h1">Flex Item 3</div>
+        </div>
+
+        <h5 class="mt-5">justify-content-start</h5>
+        <div class="d-flex flex-row justify-content-start container-flex text-white">
+            <div class="p-4 item-h1">Flex Item 1</div>
+            <div class="p-4 item-h1">Flex Item 2</div>
+            <div class="p-4 item-h1">Flex Item 3</div>
+        </div>
+
+        <h5 class="mt-5">justify-content-end</h5>
+        <div class="d-flex flex-row justify-content-end  container-flex text-white">
+            <div class="p-4 item-h1">Flex Item 1</div>
+            <div class="p-4 item-h1">Flex Item 2</div>
+            <div class="p-4 item-h1">Flex Item 3</div>
+        </div>
+
+        <h5 class="mt-5">justify-content-around & align-items-center</h5>
+        <div class="d-flex flex-row justify-content-around align-items-center container-flex text-white">
+            <div class="p-4 item-h1">Flex Item 1</div>
+            <div class="p-4 mx-3 item-h1">Flex Item 2</div>
+            <div class="p-4 item-h1">Flex Item 3</div>
+        </div>
     </div>
 
+    
+
+    
+
+    
 
 
 
@@ -94,6 +147,7 @@
 
 
 
-    <div style="margin-bottom: 600px"></div>
+
+    <div style="margin-top: 600px"></div>
 </body>
 </html>
